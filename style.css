@@ -1,11 +1,11 @@
-.game{
+.game {
     width: 600px;
     height: 200px;
     border-bottom: 1px solid #000;
     margin: auto;
 }
 
-.dino{
+.dino {
     background-image: url(./assets/png-transparent-tyrannosaurus-dino-t-rex-t-rex-chrome-vr-jump-trex-runner-lava-jump-dinosaur-angle-text-monochrome.png);
     width: 50px;
     height: 50px;
@@ -14,7 +14,7 @@
     top: 150px;
 }
 
-.cactus{
+.cactus {
     background-image: url(./assets/triangle-cactus-clip-art-san-pedro-cactus-portable-network-graphics-png-favpng-i64TRPCwmsFQSV7DEyBJbUkwv.jpg);
     width: 20px;
     height: 40px;
@@ -29,7 +29,34 @@
     0% {
         left: 580px;
     }
+
     100% {
         left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 2s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 130px;
+    }
+
+    50% {
+        top: 80px;
+    }
+
+    80% {
+        top: 130px;
+    }
+
+    100% {
+        top: 150px;
     }
 }
