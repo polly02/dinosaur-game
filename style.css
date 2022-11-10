@@ -5,7 +5,7 @@
     margin: auto;
 }
 
-.dino {
+#dino {
     background-image: url(./assets/png-transparent-tyrannosaurus-dino-t-rex-t-rex-chrome-vr-jump-trex-runner-lava-jump-dinosaur-angle-text-monochrome.png);
     width: 50px;
     height: 50px;
@@ -14,29 +14,8 @@
     top: 150px;
 }
 
-.cactus {
-    background-image: url(./assets/triangle-cactus-clip-art-san-pedro-cactus-portable-network-graphics-png-favpng-i64TRPCwmsFQSV7DEyBJbUkwv.jpg);
-    width: 20px;
-    height: 40px;
-    background-size: 20px 40px;
-    position: relative;
-    top: 110px;
-    left: 580px;
-    animation: cactusMow 2s infinite linear;
-}
-
-@keyframes cactusMow {
-    0% {
-        left: 580px;
-    }
-
-    100% {
-        left: -20px;
-    }
-}
-
 .jump {
-    animation: jump 0,7s linear;
+    animation: jump 0.7s linear;
 }
 
 @keyframes jump {
@@ -58,5 +37,26 @@
 
     100% {
         top: 150px;
+    }
+}
+
+#cactus {
+    background-image: url(./assets/triangle-cactus-clip-art-san-pedro-cactus-portable-network-graphics-png-favpng-i64TRPCwmsFQSV7DEyBJbUkwv.jpg);
+    width: 20px;
+    height: 40px;
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 580px;
+    }
+
+    100% {
+        left: -20px;
     }
 }
